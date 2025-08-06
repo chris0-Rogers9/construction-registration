@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Site Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Construction Site Attendance</h1>
+
+        <div class="form-section">
+            <h2>Register Worker</h2>
+            <input type="text" id="workerId" placeholder="Worker ID">
+            <input type="text" id="workerName" placeholder="Worker Name">
+            <button onclick="registerWorker()">Register</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Log Attendance</h2>
+            <input type="text" id="attendanceId" placeholder="Worker ID">
+            <select id="shift">
+                <option value="Morning">Morning</option>
+                <option value="Evening">Evening</option>
+            </select>
+            <button onclick="logAttendance()">Log</button>
+        </div>
+
+        <div class="report-section">
+            <h2>Attendance Report</h2>
+            <button onclick="displayReport()">Show Report</button>
+            <pre id="report"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
